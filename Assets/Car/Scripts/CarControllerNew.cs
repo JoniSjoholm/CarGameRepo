@@ -7,13 +7,23 @@ public class CarControllerNew : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private float steerAngle;
+    private Rigidbody rb;
 
     public WheelCollider frontDriverW, frontPassengerW;
     public WheelCollider rearDriverW, rearPassengerW;
     public Transform frontDriverT, frontPassengerT;
     public Transform rearDriverT, rearPassengerT;
     public float maxSteerAngle = 30.0f;
-    public float motorForce = 100f;
+    public float motorForce = 700f;
+
+    [SerializeField] private Vector3 _centerOfMass;
+
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = _centerOfMass;
+    }
 
     public void GetInput()
     {
@@ -24,16 +34,16 @@ public class CarControllerNew : MonoBehaviour
     public void Steer()
     {
         steerAngle = maxSteerAngle * horizontalInput;
-        frontDriverW.steerAngle = steerAngle;
-        frontPassengerW.steerAngle = steerAngle;
+        frontDriverW.steerAngle = Mathf.Lerp(frontDriverW.steerAngle, steerAngle, 0.5f); 
+        frontPassengerW.steerAngle = Mathf.Lerp(frontPassengerW.steerAngle, steerAngle, 0.5f);
     }
 
     public void Accelerate()
     {
         frontDriverW.motorTorque = verticalInput * motorForce;
         frontPassengerW.motorTorque = verticalInput * motorForce;
-        rearDriverW.motorTorque = verticalInput * motorForce * 0.95f;
-        rearPassengerW.motorTorque = verticalInput * motorForce * 0.95f;
+        rearDriverW.motorTorque = verticalInput * motorForce * 0.7f;
+        rearPassengerW.motorTorque = verticalInput * motorForce * 0.7f;
     }
 
     private void UpdateWheelPoses()
