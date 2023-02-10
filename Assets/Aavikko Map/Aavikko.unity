@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789284, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.6800003
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789284, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789284, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16236335
+      value: 0.16236334
       objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789284, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_LocalRotation.y
@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789284, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.13295634
+      value: 0.13295633
       objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789284, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -216,6 +216,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
+--- !u!114 &199375588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779844082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effeb1ce44e9d584183f414d92601e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheelModel: {fileID: 779844083}
+  raysNumber: 36
+  raysMaxAngle: 180
+  wheelWidth: 0.2
 --- !u!1 &700202089
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2862725622187809063, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.98
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 2862725622187809063, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: m_LocalPosition.z
@@ -365,8 +381,88 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_16 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7448595657790530373, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+      propertyPath: m_Drag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448595657790530373, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+--- !u!1 &779844082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9169827385450982854, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &779844083 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3504710580243806032, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &779844084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4478299879669318095, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &779844085 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5878692898968443854, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &779844086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8955400720158367353, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &779844087 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 329792721163605088, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &779844088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6401399774407064250, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &779844089 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4753044858995093906, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+  m_PrefabInstance: {fileID: 779844081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &779844091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779844086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effeb1ce44e9d584183f414d92601e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheelModel: {fileID: 779844087}
+  raysNumber: 36
+  raysMaxAngle: 180
+  wheelWidth: 0.2
+--- !u!114 &779844092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779844088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effeb1ce44e9d584183f414d92601e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheelModel: {fileID: 779844089}
+  raysNumber: 36
+  raysMaxAngle: 180
+  wheelWidth: 0.2
 --- !u!1 &1104411699
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +546,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2862725622187809063, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
   m_PrefabInstance: {fileID: 779844081}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038362476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779844084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effeb1ce44e9d584183f414d92601e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheelModel: {fileID: 779844085}
+  raysNumber: 36
+  raysMaxAngle: 180
+  wheelWidth: 0.2
 --- !u!33 &185689301761434002
 MeshFilter:
   m_ObjectHideFlags: 0
