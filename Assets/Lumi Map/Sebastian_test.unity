@@ -2326,6 +2326,10 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 7392010514866764758}
+    - target: {fileID: 674564024040796367, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4687669771181789281, guid: ee6c3f45d649e444fbb33f64b2676ba8, type: 3}
       propertyPath: m_Name
       value: Main Camera

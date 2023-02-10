@@ -42,8 +42,8 @@ public class CarControllerNew : MonoBehaviour
     {
         frontDriverW.motorTorque = verticalInput * motorForce;
         frontPassengerW.motorTorque = verticalInput * motorForce;
-        rearDriverW.motorTorque = verticalInput * motorForce * 0.7f;
-        rearPassengerW.motorTorque = verticalInput * motorForce * 0.7f;
+        rearDriverW.motorTorque = verticalInput * motorForce * 0.6f;
+        rearPassengerW.motorTorque = verticalInput * motorForce * 0.6f;
     }
 
     private void UpdateWheelPoses()
