@@ -2756,8 +2756,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4697188093901424796, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
+      propertyPath: brakeForce
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697188093901424796, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: motorForce
-      value: 650
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 4697188093901424796, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: maxSteerAngle

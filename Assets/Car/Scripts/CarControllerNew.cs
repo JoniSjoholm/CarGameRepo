@@ -6,6 +6,7 @@ public class CarControllerNew : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
+    private float brakeInput;
     private float steerAngle;
     private Rigidbody rb;
 
@@ -15,6 +16,7 @@ public class CarControllerNew : MonoBehaviour
     public Transform rearDriverT, rearPassengerT;
     public float maxSteerAngle = 30.0f;
     public float motorForce = 700f;
+    public float brakeForce = 100f;
 
     [SerializeField] private Vector3 _centerOfMass;
 
@@ -29,6 +31,7 @@ public class CarControllerNew : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+        brakeInput = Input.GetAxis("Jump");
     }
 
     public void Steer()
@@ -46,6 +49,13 @@ public class CarControllerNew : MonoBehaviour
         rearPassengerW.motorTorque = verticalInput * motorForce * 0.6f;
     }
 
+    public void Handbrake()
+    {
+        rearDriverW.brakeTorque = brakeInput * brakeForce;
+        rearPassengerW.brakeTorque = brakeInput * brakeForce;
+        rearDriverW.motorTorque = 0;
+        rearPassengerW.motorTorque = 0;
+    }
     private void UpdateWheelPoses()
     {
         UpdateWheelPose(frontDriverW, frontDriverT);
@@ -72,6 +82,7 @@ public class CarControllerNew : MonoBehaviour
     {
         Steer();
         Accelerate();
+        Handbrake();
         UpdateWheelPoses();
     }
 
