@@ -3132,7 +3132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4697188093901424796, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: motorForce
-      value: 800
+      value: 850
       objectReference: {fileID: 0}
     - target: {fileID: 4697188093901424796, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: maxSteerAngle
@@ -3232,7 +3232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7448595657790530373, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: m_Drag
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7448595657790530373, guid: 48b57d6af6cf32040bb0510a5e83e082, type: 3}
       propertyPath: m_Mass
