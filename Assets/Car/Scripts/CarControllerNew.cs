@@ -6,17 +6,22 @@ public class CarControllerNew : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private float brakeInput;
+    private float handBrakeInput;
     private float steerAngle;
+    private float speed;
+    private float slipAngle;
     private Rigidbody rb;
 
     public WheelCollider frontDriverW, frontPassengerW;
     public WheelCollider rearDriverW, rearPassengerW;
     public Transform frontDriverT, frontPassengerT;
     public Transform rearDriverT, rearPassengerT;
+    public float brakeInput;
     public float maxSteerAngle = 30.0f;
     public float motorForce = 700f;
-    public float brakeForce = 100f;
+    public float handBrakeForce = 50000f;
+    public float brakeForce = 50000f;
+    public AnimationCurve steeringCurve;
 
     [SerializeField] private Vector3 _centerOfMass;
 
@@ -31,28 +36,57 @@ public class CarControllerNew : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        brakeInput = Input.GetAxis("Jump");
+        handBrakeInput = Input.GetAxis("Jump");
+        slipAngle = Vector3.Angle(transform.forward, rb.velocity - transform.forward);
+        float movingDirection = Vector3.Dot(transform.forward, rb.velocity);
+
+        if (movingDirection < -0.5f && verticalInput > 0)
+        {
+            brakeInput = Mathf.Abs(verticalInput);
+        }
+        else if (movingDirection > 0.5f && verticalInput < 0)
+        {
+            brakeInput = Mathf.Abs(verticalInput);
+        }
+        else
+        {
+            brakeInput = 0;
+        }
+        
     }
 
     public void Steer()
     {
-        steerAngle = maxSteerAngle * horizontalInput;
-        frontDriverW.steerAngle = Mathf.Lerp(frontDriverW.steerAngle, steerAngle, 0.5f); 
-        frontPassengerW.steerAngle = Mathf.Lerp(frontPassengerW.steerAngle, steerAngle, 0.5f);
+        steerAngle = horizontalInput * steeringCurve.Evaluate(speed);
+        if (slipAngle < 120f)
+        {
+            steerAngle += Vector3.SignedAngle(transform.forward, rb.velocity + transform.forward, Vector3.up);
+        }
+        steerAngle = Mathf.Clamp(steerAngle, -90f, 90f);
+        frontDriverW.steerAngle = Mathf.Lerp(frontDriverW.steerAngle, steerAngle, 0.4f); 
+        frontPassengerW.steerAngle = Mathf.Lerp(frontPassengerW.steerAngle, steerAngle, 0.4f);
     }
 
     public void Accelerate()
     {
-        frontDriverW.motorTorque = verticalInput * motorForce;
-        frontPassengerW.motorTorque = verticalInput * motorForce;
-        rearDriverW.motorTorque = verticalInput * motorForce * 0.6f;
-        rearPassengerW.motorTorque = verticalInput * motorForce * 0.6f;
+        frontDriverW.motorTorque = verticalInput * motorForce * 0.65f;
+        frontPassengerW.motorTorque = verticalInput * motorForce * 0.65f;
+        rearDriverW.motorTorque = verticalInput * motorForce;
+        rearPassengerW.motorTorque = verticalInput * motorForce;
+    }
+
+    public void Brake()
+    {
+        frontDriverW.brakeTorque = brakeInput * brakeForce * 0.75f;
+        frontPassengerW.brakeTorque = brakeInput * brakeForce * 0.75f;
+        rearDriverW.brakeTorque = brakeInput * brakeForce * 0.3f;
+        rearPassengerW.brakeTorque = brakeInput * brakeForce * 0.3f;
     }
 
     public void Handbrake()
     {
-        rearDriverW.brakeTorque = brakeInput * brakeForce;
-        rearPassengerW.brakeTorque = brakeInput * brakeForce;
+        rearDriverW.brakeTorque = handBrakeInput * handBrakeForce;
+        rearPassengerW.brakeTorque = handBrakeInput * handBrakeForce;
         rearDriverW.motorTorque = 0;
         rearPassengerW.motorTorque = 0;
     }
@@ -76,12 +110,14 @@ public class CarControllerNew : MonoBehaviour
     private void Update()
     {
         GetInput();
+        speed = rb.velocity.magnitude;
     }
 
     private void FixedUpdate()
     {
         Steer();
         Accelerate();
+        Brake();
         Handbrake();
         UpdateWheelPoses();
     }

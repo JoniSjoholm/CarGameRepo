@@ -31,31 +31,31 @@ public class AntiStuck : MonoBehaviour
         {
             Vector3 rayDirection = Quaternion.AngleAxis(_wheelCollider.steerAngle, transform.up) * Quaternion.AngleAxis(i * (raysMaxAngle / raysNumber) + ((180f - raysMaxAngle) / 2), transform.right) * transform.forward;
 
-            if (Physics.Raycast(wheelModel.position, rayDirection, out RaycastHit hit, _wheelCollider.radius))
+            if (Physics.Raycast(wheelModel.position, rayDirection, out RaycastHit hit, _wheelCollider.radius * 1.32f))
             {
                 if (!hit.transform.IsChildOf(carController.transform) && !hit.collider.isTrigger)
                 {
-                    radiusOffset = Mathf.Max(radiusOffset, _wheelCollider.radius - hit.distance);
+                    radiusOffset = Mathf.Max(radiusOffset, (_wheelCollider.radius * 1.32f) - hit.distance);
                 }
 
             }
 
             Debug.DrawRay(wheelModel.position, rayDirection * orgRadius, Color.green);
-            if (Physics.Raycast(wheelModel.position + wheelModel.right * wheelWidth * 0.5f, rayDirection, out RaycastHit rightHit, _wheelCollider.radius))
+            if (Physics.Raycast(wheelModel.position + wheelModel.right * wheelWidth * 0.5f, rayDirection, out RaycastHit rightHit, _wheelCollider.radius * 1.32f))
             {
                 if (!rightHit.transform.IsChildOf(carController.transform) && !rightHit.collider.isTrigger)
                 {
-                    radiusOffset = Mathf.Max(radiusOffset, _wheelCollider.radius - rightHit.distance);
+                    radiusOffset = Mathf.Max(radiusOffset, (_wheelCollider.radius *1.32f) - rightHit.distance);
                 }
 
             }
 
             Debug.DrawRay(wheelModel.position + wheelModel.right * wheelWidth * 0.5f, rayDirection * orgRadius, Color.green);
-            if (Physics.Raycast(wheelModel.position - wheelModel.right * wheelWidth * 0.5f, rayDirection, out RaycastHit leftHit, _wheelCollider.radius))
+            if (Physics.Raycast(wheelModel.position - wheelModel.right * wheelWidth * 0.5f, rayDirection, out RaycastHit leftHit, _wheelCollider.radius * 1.32f))
             {
                 if (!leftHit.transform.IsChildOf(carController.transform) && !leftHit.collider.isTrigger)
                 {
-                    radiusOffset = Mathf.Max(radiusOffset, _wheelCollider.radius - leftHit.distance);
+                    radiusOffset = Mathf.Max(radiusOffset, (_wheelCollider.radius * 1.32f) - leftHit.distance);
                 }
 
             }
