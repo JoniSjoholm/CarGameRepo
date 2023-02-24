@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7569943044927889302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 919132148442105558, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: speedText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -332
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84201413
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.53945553
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 65.293
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689310060934246947, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438745, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: m_Name
+      value: VOLVO1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: idleRPM
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: redLine
+      value: 6800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: motorForce
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: reverseTorque
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: changeGearTime
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: decreaseGearRPM
+      value: 3500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: increaseGearRPM
+      value: 5700
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: motorBrakeForce
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: differentialRatio
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.data[0]
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.data[1]
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.data[2]
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.data[3]
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: gearRatios.Array.data[5]
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].time
+      value: 0.48136073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].time
+      value: 0.72458154
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].time
+      value: 0.9188834
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[4].time
+      value: 1.0004566
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].value
+      value: 0.32204354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].value
+      value: 0.81090415
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].value
+      value: 0.9959787
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[4].value
+      value: -0.016601546
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[0].inSlope
+      value: 0.120860614
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].inSlope
+      value: 0.9557137
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].inSlope
+      value: 2.38359
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].inSlope
+      value: 1.4623015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[0].outSlope
+      value: 0.120860614
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].inWeight
+      value: 0.1068725
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].outSlope
+      value: 0.9557137
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].inWeight
+      value: 0.07281544
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].outSlope
+      value: 2.38359
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].inWeight
+      value: 0.44526932
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].outSlope
+      value: 1.4623015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[0].outWeight
+      value: 0.62347203
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].outWeight
+      value: 0.22925624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].outWeight
+      value: 0.9622732
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+--- !u!114 &2546153493837346568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5357055994819438750, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+  m_PrefabInstance: {fileID: 7569943044927889302}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546153493837346575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e0a56ddd8627984a8debc5cdcf0948c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2546153493837346575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5357055994819438745, guid: 5d618228f6614b144a72356fadaa6ac9, type: 3}
+  m_PrefabInstance: {fileID: 7569943044927889302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &543450652164545645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546153493837346575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279d9d6380671ed4eaef8dc78307080b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 2546153493837346575}
+  RPMText: {fileID: 0}
+  GearText: {fileID: 0}
+  carController: {fileID: 2546153493837346568}
