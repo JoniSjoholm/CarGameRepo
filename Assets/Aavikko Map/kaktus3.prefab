@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3235696388733552823}
   - component: {fileID: -3028265449445742292}
   - component: {fileID: 1244998342723320860}
+  - component: {fileID: 2171946798992767821}
   m_Layer: 0
   m_Name: kaktus3
   m_TagString: Untagged
@@ -127,3 +128,17 @@ LODGroup:
     renderers:
     - renderer: {fileID: 3235696388733552823}
   m_Enabled: 1
+--- !u!136 &2171946798992767821
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028325594131720546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.023221727
+  m_Height: 0.046505082
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.023299592, z: -0.0011466825}
