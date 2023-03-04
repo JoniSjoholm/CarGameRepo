@@ -225,7 +225,7 @@ public class CarControllerNew : MonoBehaviour
             if (gearChange > 0)
             {
                 //increase gear
-                yield return new WaitForSeconds(0.4f);
+                yield return new WaitForSeconds(0.2f);
                 if(RPM < increaseGearRPM || currentGear >= gearRatios.Length - 1)
                 {
                     gearState = GearState.Running;
@@ -256,13 +256,13 @@ public class CarControllerNew : MonoBehaviour
     private void Update()
     {
         GetInput();
+        Accelerate();
         speed = rb.velocity.magnitude;
     }
 
     private void FixedUpdate()
     {
         Steer();
-        Accelerate();
         Brake();
         Handbrake();
         UpdateWheelPoses();

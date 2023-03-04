@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System;
 
 public class SpeedMeter : MonoBehaviour
 {
     [SerializeField] private GameObject car;
-    [SerializeField] private TMP_Text speedText;
+    [SerializeField] private float maxSpeed;
+    [SerializeField] private Transform speedNeedle;
+    [SerializeField] private float currentSpeed;
+    [SerializeField] private float minNeedleRotation;
+    [SerializeField] private float maxNeedleRotation;
+    [SerializeField] private TMP_Text GearText;
+    [SerializeField] private CarControllerNew carController;
     private Rigidbody rb;
-    private int speedInt;
+    
 
     private void Awake()
     {
@@ -18,8 +25,24 @@ public class SpeedMeter : MonoBehaviour
 
     private void FixedUpdate()
     {
-        speedInt = (int)Math.Round(3.6f * rb.velocity.magnitude);
-        speedText.text = "Speed: " + speedInt + "km/h";
+        currentSpeed = rb.velocity.magnitude * 3.6f;
+        speedNeedle.rotation = Quaternion.Euler(0, 0, Mathf.Lerp(minNeedleRotation, maxNeedleRotation, currentSpeed / maxSpeed));
+        GearText.text = generateGearText();
+    }
+    private string generateGearText()
+    {
+        if (carController.gearState == GearState.Neutral)
+        {
+            return "N";
+        }
+        else if (carController.gearState == GearState.Reverse)
+        {
+            return "R";
+        }
+        else
+        {
+            return (carController.currentGear + 1).ToString();
+        }
     }
 
 }

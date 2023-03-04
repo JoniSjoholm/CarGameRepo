@@ -1,0 +1,373 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1832933648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832933649}
+  - component: {fileID: 1832933651}
+  - component: {fileID: 1832933650}
+  m_Layer: 0
+  m_Name: MotorSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832933649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832933648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13, y: 0.66, z: 2.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3507232341329349036}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1832933651
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832933648}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3c1c130f6e1be75418d305f8e478e0f0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1832933650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832933648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fea953fd1b2be4ebce713ae11238ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motorSound: {fileID: 1832933651}
+  maxVolume: 1.5
+  maxPitch: 3.5
+  limiterSound: 1
+  limiterFreq: 3
+  limiterEngage: 0.8
+  revLimiter: 0
+  pitchRatio: 0
+  carController: {fileID: 0}
+--- !u!1001 &7598602609342776755
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: GearText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: maxSpeed
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: speedText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: speedNeedle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: carController
+      value: 
+      objectReference: {fileID: 4316666810322834193}
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: maxNeedleRotation
+      value: 79.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444871105015134442, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: minNeedleRotation
+      value: 352.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: idleRPM
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: redLine
+      value: 6500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: motorForce
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: changeGearTime
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: decreaseGearRPM
+      value: 3500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: increaseGearRPM
+      value: 5200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: differentialRatio
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: gearRatios.Array.data[0]
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: gearRatios.Array.data[1]
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: gearRatios.Array.data[2]
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: gearRatios.Array.data[3]
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].time
+      value: 0.54942614
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].time
+      value: 0.74729663
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].value
+      value: 0.35302407
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].value
+      value: 0.8466759
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].inSlope
+      value: 1.4266615
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].inSlope
+      value: 2.1754098
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].inSlope
+      value: 0.7562292
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].inWeight
+      value: 0.10459488
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[1].outSlope
+      value: 1.4266615
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].outSlope
+      value: 2.1754098
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].inWeight
+      value: 0.32513392
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[3].outSlope
+      value: 0.7562292
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: hpToTorqueCurve.m_Curve.Array.data[2].outWeight
+      value: 0.23755431
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123749, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_Name
+      value: VOLVO1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950461579173123749, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -332
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84201413
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.53945553
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 65.293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523960760765447623, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: RPMText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523960760765447623, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: GearText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523960760765447623, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: rpmNeedle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523960760765447623, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: maxNeedleRotation
+      value: -225
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523960760765447623, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+      propertyPath: minNeedleRotation
+      value: 3.82
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+--- !u!4 &3507232341329349036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6476064024290724895, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+  m_PrefabInstance: {fileID: 7598602609342776755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4316666810322834193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5950461579173123746, guid: 50bfdeac8f15a014d9d87c06d5d98f58, type: 3}
+  m_PrefabInstance: {fileID: 7598602609342776755}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e0a56ddd8627984a8debc5cdcf0948c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
