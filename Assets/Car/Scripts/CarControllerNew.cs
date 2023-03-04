@@ -94,7 +94,7 @@ public class CarControllerNew : MonoBehaviour
             }
             else
             {
-                clutch = Input.GetKey(KeyCode.LeftShift) ? 0 : Mathf.Lerp(clutch, 1, Time.deltaTime);
+                clutch = Input.GetButton("Fire3") ? 0 : Mathf.Lerp(clutch, 1, Time.deltaTime);
             }
         }
         else
