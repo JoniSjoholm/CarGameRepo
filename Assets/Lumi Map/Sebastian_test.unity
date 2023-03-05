@@ -3759,6 +3759,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1832933650, guid: 088acea401e664f45a2356f412994959, type: 3}
+      propertyPath: maxPitch
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832933650, guid: 088acea401e664f45a2356f412994959, type: 3}
+      propertyPath: maxVolume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832933651, guid: 088acea401e664f45a2356f412994959, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b8cb62f1a99766549bd5d4592b25a67c, type: 3}
     - target: {fileID: 2249717295980050548, guid: 088acea401e664f45a2356f412994959, type: 3}
       propertyPath: rpmNeedle
       value: 
