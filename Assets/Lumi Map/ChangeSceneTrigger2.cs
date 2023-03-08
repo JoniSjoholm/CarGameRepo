@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeSceneTrigger : MonoBehaviour
+public class ChangeSceneTrigger2 : MonoBehaviour
 {
 
     void OnTriggerEnter(Collider col)

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Lumi Map/Sebastian_test.unity
     guid: db859bfac16f62844911b3a7adcf5d4c
   - enabled: 1
+    path: Assets/Menut/midmenu.unity
+    guid: 73f8d305f0be79e47bdb6b21da2d23ae
+  - enabled: 1
     path: Assets/Aavikko Map/Aavikko.unity
     guid: e1897831c775a3c46a44f34aaead84e9
   m_configObjects: {}
